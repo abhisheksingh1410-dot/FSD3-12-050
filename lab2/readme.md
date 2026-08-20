@@ -1,23 +1,7 @@
-# EventLoop
-- Js is synchronous and single threaded by default
-
-## There can be async behaviour
-- with BrowserAPI - setTimeout,setInterval,setImmediate,nextTick
-- with promises
-- with event handlers
-
-## Promise:
-- A function not executed immediately but it must be executed after a while.
-- It has some status during the execution.
-- At final it may resolve.
-- resolve() => success.
-- reject() => unsuccess.
-
-## Call back function:
-- that pass as argument or the parameter to another function.
-
-# Modern JavaScript is divided into two categories:
-- 1) CommonJS (.cjs) => supports OOPS => require 
-   - Priority : nextTick,Promise,setImmediate/setTimeout.
-- 2) ModuleJS (.mjs) => follow modular approach => import (promise > nextTick)
-   - Priority : Promise,nextTick,setTimeout/setImmediate.
+    # CRUD Project:
+    assume we are making a cart related project
+    1. user can add any product (id,name,price,qty) into cart
+    2. user can see all items of cart
+    3. user can remove item from cart
+    4. user can also update quantity of product
+    5. all the items should be stored after termination of project
