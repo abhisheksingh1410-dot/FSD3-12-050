@@ -90,7 +90,9 @@ const main = async () => {
         await deleteFromCart(Number(pid));
         break;
       case 4:
-        console.log("Update product quantity");
+        let pid = await cin.question("Enter product id to update:");
+        let qty = await cin.question("Enter new quantity:");
+        await updateQuantity(Number(pid), Number(qty));
         break;
       case 5:
         console.log("See you later");
