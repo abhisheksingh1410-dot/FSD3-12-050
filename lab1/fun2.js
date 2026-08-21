@@ -12,14 +12,10 @@ const f3 = () => {
 
 function main() {
   console.log(" main");
-  setTimeout(f1, 0);
+  setTimeout(f1,0);
   // setInterval(f1,1000);
   setImmediate(f2);
-  process.nextTick(f3);
+  f3();
   console.log("end 🥰");
 }
 main();
-<<<<<<< HEAD
-=======
-
->>>>>>> d9737ee1628a04b77e3a21791ed47495e22058d2
